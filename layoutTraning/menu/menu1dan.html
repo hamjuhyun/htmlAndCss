@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>1단 메뉴</title>
+</head>
+
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      margin-top: 100px;
+    }
+
+    .nav {
+      max-width: 700px;
+      min-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .nav ul {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+    }
+
+    .nav li {
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    .nav li a {
+      display: block;
+      height: 36px;
+      line-height: 36px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #000;
+      border-right: 1px solid #ddd;
+      text-decoration: none;
+    }
+
+    .nav li a:hover {
+      background: gray;
+      border: 1px solid #555;
+      color: #fff;
+      box-sizing: border-box;
+    }
+  </style>
+  <div id="container">
+    <div class="nav">
+      <ul>
+        <li><a href="#">메일</a></li>
+        <li><a href="#">카페</a></li>
+        <li><a href="#">소프트웨어</a></li>
+        <li><a href="#">지식백과</a></li>
+        <li><a href="#">영화</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

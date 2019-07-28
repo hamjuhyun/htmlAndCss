@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>2,3단 레이아웃 Table</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body,
+  .wrap {
+    height: 100%;
+  }
+
+  .wrap {
+    min-width: 800px;
+  }
+
+  .header {
+    height: 100px;
+    background: lightgreen;
+  }
+
+  .container {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 800px;
+    margin: 0 auto;
+    min-height: 100%;
+  }
+
+  .container:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+  .content {
+    display: table-cell;
+    width: 500px;
+    background: lightsalmon;
+    border-right: 5px solid #000;
+    box-sizing: border-box;
+  }
+
+  .aside {
+    display: table-cell;
+    width: 300px;
+    background: lightseagreen;
+  }
+
+  .footer {
+    height: 100px;
+    background: lightblue;
+  }
+</style>
+
+<body>
+  <div class="wrap">
+    <div class="header">header</div>
+    <div class="container">
+      <div class="content">content</div>
+      <div class="aside">aside</div>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+
+</html>
